@@ -528,9 +528,6 @@ img {
   .products__poster {
     width: 10rem;
   }
-  .products__poster:hover {
-    transform: scale(2.9);
-}
 }
 
 /*=============== FOOTER ===============*/
