@@ -82,3 +82,62 @@ sr.reveal(`.specs__data, .discount__animate`,{origin: 'left', interval: 100})
 sr.reveal(`.specs__img, .discount__img`,{origin: 'right'})
 sr.reveal(`.case__img`,{origin: 'top'})
 sr.reveal(`.case__data`)
+
+// Modal Container 
+const open = document.getElementById('open');
+const close = document.getElementById('close');
+const modal = document.getElementById('modal_container');
+
+open.addEventListener('click', () => {
+	modal.classList.add('show');
+});
+
+close.addEventListener('click', () => {
+	modal.classList.remove('show');
+});
+
+// Submission of the form
+
+var firebaseConfig = {
+    apiKey: "AIzaSyBTpS74xTKn2RMnLNTBH7PLpzr-ql6UstI",
+    authDomain: "devforms-d20a4.firebaseapp.com",
+    databaseURL: "https://devforms-d20a4-default-rtdb.firebaseio.com",
+    projectId: "devforms-d20a4",
+    storageBucket: "devforms-d20a4.appspot.com",
+    messagingSenderId: "591524586515",
+    appId: "1:591524586515:web:32a97e72a70c06cb4bcbe6"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  let submitInfo = firebase.database().ref("infos")
+
+document.querySelector(".submit-form").addEventListener("submit", submitForm);
+function submitForm(e) {
+    e.preventDefault();
+    
+    let name = document.querySelector(".name").value;
+    let email = document.querySelector(".email").value;
+    let message = document.querySelector(".message").value;
+    saveSubmitInfo(name, email, message)
+}
+
+function saveSubmitInfo(name, email, message) {
+    let newSubmitInfo = submitInfo.push();
+
+    newSubmitInfo.set ({
+        name:name,
+        email:email,
+        message: message
+    })
+}
+
+function sweetalertclick() {
+    swal({
+        title: "Success",
+        text: "Thank you for giving us your review",
+        icon: "success",
+        button: "Done",
+      });
+}
