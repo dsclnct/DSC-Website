@@ -193,6 +193,7 @@
                 </div>
             </section>
         </main>
+        
 
         <!--=============== DISCOUNT ===============-->
         <section class="discount section">
@@ -213,6 +214,7 @@
                 </form>
             </div>
         </section>
+        
 
         <!--=============== FOOTER ===============-->
         <footer class="footer section">
@@ -296,6 +298,42 @@
             </p>
         </footer>
 
+        <div class="submit-form">
+            <button id="open" style="margin-bottom: 20px;">
+                Submit review for us 
+            </button>
+            
+            <div class="modal-container" id="modal_container">
+                <div class="modal">
+                    <h1>Submit Your Review ✡ </h1>
+                    <p>You can send us whatever you think about our comunity</p>
+                    <form class="submit-form">
+                        <label for = "">Full Name</label>
+                        <input class="name" type = "text" placeholder="Full Name" /><br>
+                        <label for="">Email</label>
+                        <input class="email" type="email" placeholder="Email for reaching you out . . ." />
+                        <label for = "">Message</label>
+                        <textarea
+                        class="message"
+                        name = ""
+                        id = ""
+                        cols="30"
+                        rows="10"
+                        placeholder="Write your Message . . ."
+                        ></textarea>
+                        <div class="btn-grp">
+                        <button type="submit" onclick="sweetalertclick()">
+                            Submit
+                        </button>
+                        <button id = "close" style="margin-left: 5%;">
+                            Close
+                        </button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
         <!--=============== SCROLL UP ===============-->
         <a href="#" class="scrollup" id="scroll-up">
             <i class="ri-arrow-up-s-line scrollup__icon"></i>
@@ -303,6 +341,11 @@
         
         <!--=============== SCROLL REVEAL ===============-->
         <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!-- =============Firebase ================ -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase.js"></script>
+
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
