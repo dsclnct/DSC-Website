@@ -977,6 +977,74 @@ button {
   border-bottom: 2px solid #1a883f;
 }
 
+/* Faq */
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.img-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+.img-resp {
+  width: 20rem;
+}
+
+.form-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Accordion */
+
+.accordion-sec {
+  width: 50rem;
+  height: 55vh;
+}
+
+.message-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.nameFirld {
+  padding: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .img-resp {
+    width: 12rem;
+    padding: 0;
+  }
+
+  .message-form {
+    flex-direction: column;
+  }
+
+  .img-nav {
+    padding: 1rem;
+  }
+
+  .accordion-sec {
+    width: 20rem;
+  }
+}
+
+.center-accordion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
