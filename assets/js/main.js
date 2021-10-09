@@ -141,3 +141,30 @@ function sweetalertclick() {
         button: "Done",
       });
 }
+
+/*=============== Visit Counter ===============*/
+
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://api.countapi.xyz/hit/gdsclnct.xyz/visits");
+xhr.responseType = "json";
+xhr.onload = function() {
+    
+    const obj = document.getElementById("visits");
+    animateValue(obj, 1, this.response.value, 5000);      
+}
+xhr.send();
+
+// function to control the increment of the counter
+function animateValue(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj.innerHTML = Math.floor(progress * (end - start) + start);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
