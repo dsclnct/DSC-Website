@@ -462,6 +462,8 @@ img {
   position: relative;
   background-color: var(--container-color);
   padding: 2rem 1.5rem;
+  text-align: center;
+  font-size: x-large;
   border-radius: .75rem;
 }
 
@@ -479,6 +481,12 @@ img {
   position: absolute;
   top: 4rem;
   right: -11rem;
+}
+
+.discord-img-w-link{
+  text-align: center;
+  width: 34px;
+  height: 34px;
 }
 /* ============== CARD ================= */
 
