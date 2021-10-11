@@ -14,6 +14,8 @@
   --body-color: hsl(var(--hue-color), 4%, 6%);
   --container-color: hsl(var(--hue-color), 4%, 10%);
   --text-gradient: linear-gradient(hsl(var(--hue-color), 4%, 24%), hsl(var(--hue-color), 4%, 8%));
+  /* Google color scheme text gradient */
+  /* --text-gradient: linear-gradient(90deg, rgba(66,133,244,1) 0%, rgba(234,67,53,1) 33%, rgba(251,188,5,1) 67%, rgba(52,168,83,1) 94%); */
   --scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
   --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
   /*========== Font and typography ==========*/
@@ -406,9 +408,9 @@ img {
   font-size: var(--smaller-font-size);
 }
 
-.specs__data:nth-child(1), .specs__data:nth-child(4) {
+/* .specs__data:nth-child(1), .specs__data:nth-child(4) {
   margin-left: 1.5rem;
-}
+} */
 
 
 
@@ -514,7 +516,6 @@ img {
   background-color: rgb(28, 28, 28, 1);
   border-radius: 20px;
 }
-
 
 .products__head {
   font-size: 3vw;
@@ -884,10 +885,10 @@ button {
   margin-top: 20px;
 }
 
-.modal {
+/* .modal {
   /* background-color: black;
-  opacity: 1; */
-}
+  opacity: 1; 
+} */
 
 .modal-container {
 	position: fixed;
@@ -946,7 +947,7 @@ button {
 }
 
 .modal > .submit-form label {
-  font-size: 8px;
+  font-size: large;
   display: inline-block;
   padding: 12px;
 }
@@ -963,19 +964,19 @@ button {
   border: none;
   border-bottom: 2px solid #ccc;
   background: rgb(255, 255, 255);
-  font-size: 10px;
+  font-size: 16px;
   border-radius: 3px;
   margin-bottom: 20px;
   width: 70%;
 }
 
 .modal > .submit-form textarea {
-  padding: 6px 20 px;
+  padding: 6px;
   outline: none;
   border: none;
   border-bottom: 2px solid #ccc;
   background: rgb(255, 255, 255);
-  font-size: px;
+  font-size: 16px;
   border-radius: 3px;
   width: 70%;
   font-family: inter;
