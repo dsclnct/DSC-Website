@@ -959,24 +959,24 @@ button {
 }
 
 .modal > .submit-form input {
-  padding: 6px 5px;
+  padding: 5px;
   outline: none;
   border: none;
   border-bottom: 2px solid #ccc;
   background: rgb(255, 255, 255);
-  font-size: 16px;
+  font-size: 14px;
   border-radius: 3px;
   margin-bottom: 20px;
   width: 70%;
 }
 
 .modal > .submit-form textarea {
-  padding: 6px;
+  padding: 5px;
   outline: none;
   border: none;
   border-bottom: 2px solid #ccc;
   background: rgb(255, 255, 255);
-  font-size: 16px;
+  font-size: 14px;
   border-radius: 3px;
   width: 70%;
   font-family: inter;
