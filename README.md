@@ -21,6 +21,8 @@ Google Developer Student Clubs (GDSC) are community groups for college and unive
 
 > **You can view the website  [here](https://www.gdsclnct.xyz/).**
 
+> **If you wish to contribute check `contribution.md` inside Contribution folder.**
+
 ## Tech Stack
 - **Frontend:**  
 <img alt="HTML5" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/> 
