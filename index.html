@@ -81,7 +81,7 @@
                 <div class="home__data">
                     <div class="home__header">
                         <h1 class="home__title">GDSC</h1>
-                        <h2 class="home__subtitle">LNCT</h2>
+                        <h2 class="home__subtitle" style="padding-top: 10px;text-align: center;">LNCT</h2>
                     </div>
 
                     <div class="home__footer">
@@ -103,7 +103,6 @@
                                 <span class="button--flex">
                                     #30DaysofCloud FAQs
                                 </span>
-
                             </a>
                         </div>
                     </div>
@@ -132,29 +131,21 @@
             </div>
         </section>
 
-
-
-
-
-
         <!--=============== COMMUNITY PARTNERS ===============-->
         <section class="sponsor section" id="compa">
             <h1 class="sponsors__head">Community Partners</h1>
             <br>
             <br>
             <div class="sponsor__container container grid">
-
                 <img src="assets/img/compa1f.png" alt="" class="sponsor__img" style="width: 5rem;">
                 <img src="assets/img/compa2f.png" alt="" class="sponsor__img" style="width:5rem;">
                 <img src="assets/img/compa3f.png" alt="" class="sponsor__img">
                 <img src="assets/img/compa4f.png" alt="" class="sponsor__img" style="width: 5rem;">
                 <img src="assets/img/compa5f.png" alt="" class="sponsor__img" style="width:5rem;">
             </div>
-
             <br>
             <br>
             <div class="sponsor__container container grid">
-
                 <img src="assets/img/compa7f.png" alt="" class="sponsor__img" style="width: 5rem;">
                 <img src="assets/img/compa8f.png" alt="" class="sponsor__img" style="width: 5rem;">
                 <img src="assets/img/compa9f.png" alt="" class="sponsor__img" style="width: 7rem;">
@@ -252,21 +243,12 @@
 
     <!--=============== DISCOUNT ===============-->
     <section class="discount section">
-        <div class="discount__container container grid">
+        <div class="discount__container container">
             <div class="discount__animate">
-                <h2 class="discount__title">Start joining DSC : <br> LNCT now</h2>
-                <p class="discount__description">Join our Discord now</p>
-                <a href="https://discord.gg/KUWxHpZG8d" class="button button--flex">
-                    Join Now
-                </a>
+                <h2 class="discount__title">Start joining DSC : LNCT Now</h2>
+                <p class="discount__description">Join our Discord Now</p>
+                <a href="https://discord.gg/KUWxHpZG8d" class="button button--flex">Join Discord Server</a>
             </div>
-
-            <form action="" class="footer__form discount__animate">
-                <input type="email" placeholder="Write us Here . . ." class="footer__input">
-                <button class="button button--flex">
-                    <i class="ri-send-plane-line button__icon"></i> Send
-                </button>
-            </form>
         </div>
     </section>
 
@@ -306,16 +288,16 @@
 
                 <ul class="footer__links">
                     <li>
-                        <a href="#" class="footer__link">R S V P</a>
+                        <a class="footer__link">R S V P</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Sponsor Us</a>
+                        <a class="footer__link">Sponsor Us</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Join as CP</a>
+                        <a class="footer__link">Join as CP</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Any Suggestions ?</a>
+                        <a class="footer__link">Any Suggestions ?</a>
                     </li>
                 </ul>
             </div>
@@ -327,7 +309,7 @@
                         <i class="ri-send-plane-line button__icon"></i> Send
                     </button>
                 </form>
-
+                <h3 class="footer__title">Follow Us On Social Media</h3>
                 <div class="footer__social">
                     <a href="https://www.facebook.com/lnctdev/" target="_blank" class="footer__social-link">
                         <i class="ri-facebook-fill"></i>
@@ -357,9 +339,8 @@
                 <h5 class="products__head" id="visits"></h5>
             </div>
             <p class="">
-                <a href="https://www.youtube.com/c/Bedimcode/" target="_blank" class="footer__copy-link">&#169;
-                    Develoeprs
-                    Student Club : Lakshmi Narain College of Technology . All right reserved</a>
+                <a href="https://www.youtube.com/channel/UCr4nj7gGFSsBznyaEu2o4lw" target="_blank" class="footer__copy-link">&#169;
+                    Developers Student Club : Lakshmi Narain College of Technology . All right reserved</a>
             </p>
         </div>
 
@@ -373,15 +354,15 @@
         <div class="modal-container" id="modal_container">
             <div class="modal">
                 <h1>Submit Your Review ✡ </h1>
-                <p>You can send us whatever you think about our comunity</p>
+                <p>You can send us whatever you think about our community</p>
                 <form class="submit-form">
-                    <label for="">Full Name</label>
-                    <input class="name" type="text" placeholder="Full Name" /><br>
-                    <label for="">Email</label>
-                    <input class="email" type="email" placeholder="Email for reaching you out . . ." />
-                    <label for="">Message</label>
-                    <textarea class="message" name="" id="" cols="30" rows="10"
-                        placeholder="Write your Message . . ."></textarea>
+                    <label for="name">Full Name</label>
+                    <input class="name" type="text" placeholder="Full Name" required/>
+                    <label for="email">Email</label>
+                    <input class="email" type="email" placeholder="Email for reaching you out . . ." required/>
+                    <label for="message">Message</label>
+                    <textarea class="message" name="" id="" cols="30" rows="8"
+                        placeholder="Write your Message . . ." required></textarea>
                     <div class="btn-grp">
                         <button type="submit" onclick="sweetalertclick()">
                             Submit
